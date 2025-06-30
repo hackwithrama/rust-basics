@@ -1,8 +1,10 @@
-pub mod helpers;
+pub mod closures;
 pub mod control_flow;
+pub mod helpers;
 
 // use crate::helpers::get_full_name;
 // use crate::control_flow::{test_if, test_while, test_loop, test_for};
+use crate::closures::test_closures;
 
 fn main() {
     println!("Hello, world!");
@@ -17,4 +19,6 @@ fn main() {
     // test_loop()
 
     // test_for()
+    
+    test_closures();
 }
