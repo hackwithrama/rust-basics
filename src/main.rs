@@ -6,7 +6,7 @@ pub mod match_expression;
 // use crate::helpers::get_full_name;
 // use crate::control_flow::{test_if, test_while, test_loop, test_for};
 // use crate::closures::test_closures;
-use crate::match_expression::*;
+// use crate::match_expression::*;
 
 fn main() {
     println!("Hello, world!");
@@ -26,5 +26,5 @@ fn main() {
 
     // test_match_int();
 
-    test_match_string();
+    // test_match_string();
 }
