@@ -2,11 +2,12 @@ pub mod closures;
 pub mod control_flow;
 pub mod helpers;
 pub mod match_expression;
-
+pub mod rust_enum;
 // use crate::helpers::get_full_name;
 // use crate::control_flow::{test_if, test_while, test_loop, test_for};
 // use crate::closures::test_closures;
 // use crate::match_expression::*;
+use crate::rust_enum::*;
 
 fn main() {
     println!("Hello, world!");
@@ -27,4 +28,10 @@ fn main() {
     // test_match_int();
 
     // test_match_string();
+
+    // let result = test_option_type();
+    // println!("{:?}", result);
+
+    let result = test_option_chartype();
+    println!("{:?}", result.unwrap());
 }
