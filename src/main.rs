@@ -1,10 +1,12 @@
 pub mod closures;
 pub mod control_flow;
 pub mod helpers;
+pub mod match_expression;
 
 // use crate::helpers::get_full_name;
 // use crate::control_flow::{test_if, test_while, test_loop, test_for};
-use crate::closures::test_closures;
+// use crate::closures::test_closures;
+use crate::match_expression::*;
 
 fn main() {
     println!("Hello, world!");
@@ -19,6 +21,10 @@ fn main() {
     // test_loop()
 
     // test_for()
-    
-    test_closures();
+
+    // test_closures();
+
+    // test_match_int();
+
+    test_match_string();
 }
