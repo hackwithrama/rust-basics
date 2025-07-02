@@ -9,6 +9,7 @@ enum VehicleColor {
     Green,
 }
 
+#[derive(Debug)]
 struct Vehicle {
     manufacturer: String,
     model: String,
@@ -16,15 +17,37 @@ struct Vehicle {
     color: VehicleColor,
 }
 
+impl Vehicle {
+    fn paint(&mut self, new_color: VehicleColor) {
+        self.color = new_color
+    }
+    
+    fn create_new_vehicle() -> Vehicle {
+        let new_vehicle: Vehicle = Vehicle{
+            manufacturer: "BMW".to_string(),
+            model: "X1".to_string(),
+            year: 2025,
+            color: VehicleColor::Black,
+        };
+        new_vehicle
+    }
+}
+
+pub fn test_create_static_new_vehicle() {
+    let new_vehicle = Vehicle::create_new_vehicle();
+    println!("{:?}", new_vehicle)
+}
+
 struct VehicleTuple(String, String, u16);
 
 fn new_vehicle() -> Vehicle {
-    let v1 = Vehicle {
+    let mut v1 = Vehicle {
         manufacturer: "Porsche".to_string(),
         model: "Panamara".to_string(),
         year: 2025,
         color: VehicleColor::Blue,
     };
+    v1.paint(VehicleColor::Silver);
     v1
 }
 

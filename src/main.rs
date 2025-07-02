@@ -29,9 +29,11 @@ fn main() {
 
     // test_match_string();
 
-    test_create_new_person();
+    // test_create_new_person();
 
     // test_create_new_vehicle();
     
     // create_new_vehicle_tuple();
+    
+    // test_create_static_new_vehicle();
 }
