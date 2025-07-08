@@ -3,11 +3,14 @@ pub mod control_flow;
 pub mod helpers;
 pub mod match_expression;
 pub mod rust_struct_generic_trait;
+pub mod test_traits;
+
 // use crate::helpers::get_full_name;
 // use crate::control_flow::{test_if, test_while, test_loop, test_for};
 // use crate::closures::test_closures;
 // use crate::match_expression::*;
-use crate::rust_struct_generic_trait::*;
+// use crate::rust_struct_generic_trait::*;
+use crate::test_traits::*;
 
 fn main() {
     println!("Hello, world!");
@@ -36,4 +39,6 @@ fn main() {
     // create_new_vehicle_tuple();
     
     // test_create_static_new_vehicle();
+
+    create_person();
 }
