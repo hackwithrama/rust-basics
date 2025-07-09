@@ -5,14 +5,15 @@ pub mod match_expression;
 pub mod rust_enum;
 pub mod rust_struct_generic_trait;
 pub mod test_traits;
-
+pub mod vec_types;
 // use crate::helpers::get_full_name;
 // use crate::control_flow::{test_if, test_while, test_loop, test_for};
 // use crate::closures::test_closures;
 // use crate::match_expression::*;
 //use crate::rust_enum::*;
 // use crate::rust_struct_generic_trait::*;
-use crate::test_traits::*;
+// use crate::test_traits::*;
+use crate::vec_types::*;
 
 fn main() {
     println!("Hello, world!");
@@ -48,5 +49,10 @@ fn main() {
 
     // test_create_static_new_vehicle();
 
-    create_person();
+    // create_person();
+    
+    // test_vec_int();
+    
+    test_vec_string();
+
 }
