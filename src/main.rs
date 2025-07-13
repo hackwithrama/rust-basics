@@ -2,6 +2,7 @@ pub mod closures;
 pub mod control_flow;
 pub mod helpers;
 pub mod match_expression;
+pub mod my_mpsc;
 pub mod my_threads;
 pub mod mymutex;
 pub mod myscopedthread;
@@ -20,7 +21,8 @@ pub mod vec_types;
 // use crate::vec_types::*;
 // use crate::my_threads::*;
 // use crate::myscopedthread::*;
-use crate::mymutex::*;
+// use crate::mymutex::*;
+use crate::my_mpsc::*;
 
 fn main() {
     println!("Hello, world!");
@@ -68,5 +70,7 @@ fn main() {
 
     // test_thread_variable();
 
-    test_mutex();
+    // test_mutex();
+
+    test_channels();
 }
